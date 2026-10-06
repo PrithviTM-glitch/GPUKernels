@@ -1,0 +1,54 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Build outputs
+*.o
+*.obj
+*.a
+*.dylib
+*.so
+*.out
+*.s
+*.ll
+*.d
+*.dSYM/
+
+# Compiled binaries (vecadd and other per-project executables)
+JustParralleProgrammes/*/vecadd
+JustParralleProgrammes/*/scalar
+JustParralleProgrammes/*/neon
+JustParralleProgrammes/*/threads
+JustParralleProgrammes/*/main
+
+# Metal build products (for later GPU stages)
+*.metallib
+*.air
+
+# Benchmark output and profiling
+*.csv
+*.log
+*.trace
+*.xcresult/
+
+# Xcode
+xcuserdata/
+DerivedData/
+build/
+*.xcworkspace/xcuserdata/
+
+# Editors
+.vscode/
+.vscodium/
+*.swp
+*~
+
+# Python / conda (plotting scripts)
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
