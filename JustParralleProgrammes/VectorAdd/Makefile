@@ -21,8 +21,8 @@ n_scalar.o: CFLAGS += -fno-vectorize -fno-slp-vectorize -fno-unroll-loops
 	$(CC) $(CFLAGS) -MMD -MP -c $< -o $@
 
 run: $(TARGET)
-	mkdir -p results
-	./$(TARGET)
+  	mkdir -p results
+  	./$(TARGET) > results/run.csv
 
 clean:
 	rm -f $(OBJS) $(DEPS) $(TARGET)
